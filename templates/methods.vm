@@ -1,0 +1,12 @@
+#foreach ($variable in $variables)
+#if (${variable.getDirection()} == "INPUT")    method Action in_${variable.getName()}(${variable.getDataType()} p_${variable.getName()});
+#if (${variable.getDataType().getType()} == "PRIMITIVE")        ${variable.getName()} <= p_${variable.getName()}; #end
+#if (${variable.getDataType().getType()} == "VECTOR")        writeVReg(${variable.getName()}, p_${variable.getName()}); #end
+${nl}    endmethod ${nl}
+#end
+#if (${variable.getDirection()} == "OUTPUT")    method ${variable.getDataType()} out_${variable.getName()}();
+#if (${variable.getDataType().getType()} == "PRIMITIVE")        return ${variable.getName()}; #end
+#if (${variable.getDataType().getType()} == "VECTOR")        return readVReg(${variable.getName()}); #end
+${nl}    endmethod ${nl}
+#end
+#end

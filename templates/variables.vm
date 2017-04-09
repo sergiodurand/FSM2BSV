@@ -1,0 +1,3 @@
+#foreach ($variable in $variables)
+    ${variable.getDeclaration()}
+#end

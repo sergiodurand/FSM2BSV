@@ -1,0 +1,28 @@
+package $fsmName;
+
+#if ($thereIsVector)import Vector::*;
+#end
+#if ($thereIsBRAM)import BRAM::*;
+#end
+
+#parse ("templates/interface.vm")
+
+typedef enum { #parse ("templates/enum.vm") } State deriving(Bits,Eq);
+
+(* synthesize *)
+module mk${fsmName}(I_${fsmName});
+    #if ($thereIsBRAM)BRAM_Configure cfg = defaultValue;#end
+
+#parse ("templates/bram.vm")
+
+    Reg#(State) state <- mkReg($resetState);
+
+#parse ("templates/variables.vm")
+
+#parse ("templates/rule.vm")
+
+#parse ("templates/methods.vm")
+
+endmodule: mk${fsmName}
+
+endpackage: $fsmName

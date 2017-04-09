@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_XAcp8X25EeCY1v-1tAjgJQ" name="model">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_XCEakH25EeCY1v-1tAjgJQ" name="Semaforo">
+    <region xmi:id="_XCTEEH25EeCY1v-1tAjgJQ" name="Region0">
+      <subvertex xmi:type="uml:State" xmi:id="_tXAKUH27EeCY1v-1tAjgJQ" name="Verde"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ukTD4H27EeCY1v-1tAjgJQ" name="Amarelo"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vek60H27EeCY1v-1tAjgJQ" name="Vermelho"/>
+      <transition xmi:id="_xP-nAH27EeCY1v-1tAjgJQ" name="goAmarelo" source="_tXAKUH27EeCY1v-1tAjgJQ" target="_ukTD4H27EeCY1v-1tAjgJQ"/>
+      <transition xmi:id="_zQrTcH27EeCY1v-1tAjgJQ" name="goVermelho" source="_ukTD4H27EeCY1v-1tAjgJQ" target="_vek60H27EeCY1v-1tAjgJQ"/>
+      <transition xmi:id="_0_LcoH27EeCY1v-1tAjgJQ" name="goVerde" source="_vek60H27EeCY1v-1tAjgJQ" target="_tXAKUH27EeCY1v-1tAjgJQ"/>
+    </region>
+  </packagedElement>
+</uml:Model>

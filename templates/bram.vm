@@ -1,0 +1,4 @@
+#foreach ($bram in $brams)
+${bram.toString()}
+${bram.toStringFunction()}
+#end

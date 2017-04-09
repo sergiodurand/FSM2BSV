@@ -1,0 +1,1 @@
+#foreach ($state in $states)$state.getEnumName()#if ($velocityCount != $states.size()), #end#end

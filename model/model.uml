@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_JwsHYY-9EeCAVtDQfCjStQ" name="model">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_JzVLsI-9EeCAVtDQfCjStQ" name="StateMachine0">
+    <ownedComment xmi:id="_8-OHwZA7EeCVWMrombQCfA">
+      <body>a : in
+b : in
+x : out
+y : out</body>
+    </ownedComment>
+    <region xmi:id="_JzxQkI-9EeCAVtDQfCjStQ" name="Region0">
+      <subvertex xmi:type="uml:State" xmi:id="_PooyMI-9EeCAVtDQfCjStQ" name="estado1">
+        <doActivity xmi:type="uml:Activity" xmi:id="_TYtxkI-9EeCAVtDQfCjStQ" name="Atividade">
+          <node xmi:type="uml:OpaqueAction" xmi:id="_PqWL8I_JEeCAVtDQfCjStQ" name="acaoDoEstado1" visibility="public">
+            <language>BSV</language>
+            <body>contator &lt;= contador +1;</body>
+            <body>if (tempo == 30)&#xA;    estado &lt;= AMARELO;</body>
+          </node>
+        </doActivity>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_ILXccI_KEeCAVtDQfCjStQ" name="estado2"/>
+      <transition xmi:id="_Uf2s4I_KEeCAVtDQfCjStQ" name="transicao" source="_PooyMI-9EeCAVtDQfCjStQ" target="_ILXccI_KEeCAVtDQfCjStQ">
+        <ownedRule xmi:id="_bZqHMI_TEeCAVtDQfCjStQ" name="Constraint0">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_wVxp4I_VEeCAVtDQfCjStQ" name="OpaqueExpression0">
+            <language>BSV</language>
+            <body>contador = 0</body>
+          </specification>
+        </ownedRule>
+      </transition>
+    </region>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,6 @@
+#foreach ($state in $states)
+    rule ${state.getName()} (state == ${state.getEnumName()});
+${state.getDoTarget()}
+    endrule
+
+#end

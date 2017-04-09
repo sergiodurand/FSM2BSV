@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmi:id="_XAcp8X25EeCY1v-1tAjgJQ" name="model">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_XCEakH25EeCY1v-1tAjgJQ" name="Semaforo">
+    <region xmi:id="_XCTEEH25EeCY1v-1tAjgJQ" name="Region0">
+      <subvertex xmi:type="uml:State" xmi:id="_tXAKUH27EeCY1v-1tAjgJQ" name="Verde"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ukTD4H27EeCY1v-1tAjgJQ" name="Amarelo"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vek60H27EeCY1v-1tAjgJQ" name="Vermelho"/>
+      <transition xmi:id="_xP-nAH27E" name="goAmarelo" source="_tXAKUH27EeC" target="_ukTD4JQ"/>
+      <transition xmi:id="_zQrTcHgJQ" name="goVermelho" source="_ukTD1tAjgJQ" target="_vtAjgJQ"/>
+      <transition xmi:id="_0_LcoHgJQ" name="goVerde" source="_vek61tAjgJQ" target="_tv-1tAjgJQ"/>
+    </region>
+  </packagedElement>
+</uml:Model>
